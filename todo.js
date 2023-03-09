@@ -18,6 +18,7 @@ form.addEventListener('submit', e=>{
     reload(newTodoItem)
     save(todo)
     input.value=""
+    input.focus()
 })
 
 function reload(todoItem){
