@@ -7,9 +7,12 @@ todo.forEach(reload)
 
 form.addEventListener('submit', e=>{
     e.preventDefault()
-    const inp = input.value
+    const inp = input.value.trim();
     //checking if input value is == ""
-    if(inp === "") return
+    if (inp.length === 0) {
+        input.value = "";
+        return;
+    }
     const newTodoItem = { id: Date.now(), value: inp }
     todo.push(newTodoItem)
     reload(newTodoItem)
