@@ -17,13 +17,13 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 10cm;
+    width: 20cm;
     height: auto;
     background-color: #D5CEA3;
     padding: 40px;
     border-radius: 3px;
+    overflow-wrap: break-word;
 }
-
 label{
     font-size: large;
     padding-bottom: 100px;
